@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.6"
+metadata:
+  name: zalm.zalmusersfiorielements
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: S4P_300
+          url: http://adeps4p0.saplab.3as-cloud.de:44300
+          scp: true
+        app:
+          name: ZML_USERS_DEMO
+          description: Fiori Elements List Report / Object page Demo for Users
+          package: ZALM_FSAPP_CDS
+          transport: S4PK901376

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0"
+	xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="">
+        <edmx:Include Namespace="cds_zalm_zui_users_m_fsapp_cds"/>
+    </edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value">
+		<edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value">
+		<edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema Namespace="zalm_fsapp_ui_srv_van.v1"
+			xmlns="http://docs.oasis-open.org/odata/ns/edm">
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_COMPANIES_CDSType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Id"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Uuid"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Companyname"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Catchphrase"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Sector"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Buzz"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Maybe"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Companylogo"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_RELPRODUSERS_CDSType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Id"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Title"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Description"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Price"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Discountpercentage"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Rating"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Stock"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Brand"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Category"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Thumbnail"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Images"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_TODOS_CDSType/Delete_mc">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_TODOS_CDSType/Update_mc">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_TODOS_COMP_CDSType/P_C">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_USERS_CDSType/Delete_mc">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_USERS_CDSType/Update_mc">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_RELPRODUSERS_CDSType">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Id"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Title"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Description"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Price"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Discountpercentage"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Rating"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Stock"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Brand"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Category"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Thumbnail"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Images"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_TODOS_CDSType/CreatedBy">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_TODOS_CDSType/CreatedAt">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_TODOS_CDSType/LastChangedBy">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_TODOS_CDSType/LastChangedAt">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_TODOS_CDSType/LocalLastChangedAt">
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.ZALM_ZC_TODOS_CDSType">
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="User Todo Informations"/>
+							<PropertyValue Property="ID" String="FacetUserFields"/>
+							<PropertyValue Property="Target" AnnotationPath="@UI.Identification#PARTNER_INFO"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Todo Information"/>
+							<PropertyValue Property="ID" String="TodoCollection"/>
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#TODO_INFO"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="TODO_INFO">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Label" String="{@i18n>TodoTask}"/>
+									<PropertyValue Property="Value" Path="Todo"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Label" String="TodoId"/>
+									<PropertyValue Property="Value" Path="TodoId"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Label" String="Task finished?"/>
+									<PropertyValue Property="Criticality" Path="Status"/>
+									<PropertyValue Property="Value" Path="completed"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="Status"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record>
+						<PropertyValue Property="TypeName" String="Todo"/>
+						<PropertyValue Property="TypeNamePlural" String="Todos"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification" Qualifier="PARTNER_INFO">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Username"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Email"/>
+							<PropertyValue Property="Value" Path="Usermail"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Phone"/>
+							<PropertyValue Property="Value" Path="Phone"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="User Nr"/>
+							<PropertyValue Property="Value" Path="UserId"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Todo Nr"/>
+							<PropertyValue Property="Value" Path="TodoId"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>Todo</PropertyPath>
+						<PropertyPath>TodoId</PropertyPath>
+						<PropertyPath>UserId</PropertyPath>
+						<PropertyPath>completed</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="cds_zalm_zui_users_m_fsapp_cds.UsersType">
+				<Annotation Term="UI.DataPoint" Qualifier="UserAvatar">
+					<Record>
+						<PropertyValue Property="Value" Path="Birthdate"/>
+						<PropertyValue Property="Title" String="Birthdate"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderFacets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Header"/>
+							<PropertyValue Property="ID" String="FacetControlHeader"/>
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#Control_Header"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="ID" String="UserAvatar"/>
+							<PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#UserAvatar"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.CollectionFacet">
+							<PropertyValue Property="Label" String="User Collection"/>
+							<PropertyValue Property="ID" String="FacetCollection"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet">
+										<PropertyValue Property="Label" String="User personal information"/>
+										<PropertyValue Property="ID" String="FacetUserInfo"/>
+										<PropertyValue Property="Target" AnnotationPath="@UI.Identification#USER_INFO"/>
+									</Record>
+									<Record Type="UI.ReferenceFacet">
+										<PropertyValue Property="Label" String="User Address"/>
+										<PropertyValue Property="ID" String="FacetUserAddress"/>
+										<PropertyValue Property="Target" AnnotationPath="@UI.Identification#USER_ADDRESS"/>
+									</Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Job data"/>
+							<PropertyValue Property="ID" String="FacetUserJob"/>
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#JOB_DATA"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Geodata"/>
+							<PropertyValue Property="ID" String="GeoData"/>
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GEO_DATA"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Todos"/>
+							<PropertyValue Property="ID" String="Todos"/>
+							<PropertyValue Property="Target" AnnotationPath="to_Todos/@UI.LineItem"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Company"/>
+							<PropertyValue Property="ID" String="Company"/>
+							<PropertyValue Property="Target" AnnotationPath="to_Companies/@UI.LineItem"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Label" String="Products purchased"/>
+							<PropertyValue Property="ID" String="Products"/>
+							<PropertyValue Property="Target" AnnotationPath="to_Products/@UI.LineItem"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="Control_Header">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Label" String="Username"/>
+									<PropertyValue Property="Value" Path="Username"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="GEO_DATA">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Label" String="Latitude"/>
+									<PropertyValue Property="Value" Path="Latitude"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Label" String="Longitude"/>
+									<PropertyValue Property="Value" Path="Longitude"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="JOB_DATA">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="Jobtitle"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="Jobtype"/>
+								</Record>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="Companyid"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record>
+						<PropertyValue Property="TypeName" String="User-Data"/>
+						<PropertyValue Property="TypeNamePlural" String="Users"/>
+						<PropertyValue Property="TypeImageUrl" String="sap-icon://my-sales-order"/>
+						<PropertyValue Property="ImageUrl" Path="avatar"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField">
+								<PropertyValue Property="Value" Path="Fullname"/>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="Description">
+							<Record Type="UI.DataField">
+								<PropertyValue Property="Label" String="(Description)"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification" Qualifier="USER_ADDRESS">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Email"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Phone"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Country"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="County"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="City"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Streetaddress"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Zipcode"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.Identification" Qualifier="USER_INFO">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Id"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Firstname"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Lastname"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Fullname"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Gender"/>
+						</Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Id"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" String="">
+								<Annotation Term="Core.Messages">
+									<Collection>
+										<Record>
+											<PropertyValue Property="code" String="SADL_GW_EXP_VOCAN-001"/>
+											<PropertyValue Property="message" String="Property '_Companies' of annotation 'UI.LINEITEM$1$' in proj./view 'Users' not found"/>
+											<PropertyValue Property="severity" String="error"/>
+										</Record>
+									</Collection>
+								</Annotation>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" String="">
+								<Annotation Term="Core.Messages">
+									<Collection>
+										<Record>
+											<PropertyValue Property="code" String="SADL_GW_EXP_VOCAN-001"/>
+											<PropertyValue Property="message" String="Property 'to_Products' of annotation 'UI.LINEITEM$1$' in proj./view 'Users' not found"/>
+											<PropertyValue Property="severity" String="error"/>
+										</Record>
+									</Collection>
+								</Annotation>
+							</PropertyValue>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+        <Annotations Target="cds_zalm_zui_users_m_fsapp_cds.UsersType/Birthdate">
+            <Annotation Term="Common.ValueList">
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                                <PropertyValue Property="ValueListProperty" String="Birthdate"/>
+                                <PropertyValue Property="LocalDataProperty" PropertyPath="Birthdate"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                    <PropertyValue Property="CollectionPath" String="Users"/>
+                    <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Label" String="Birthday value help"/>
+                </Record>
+            </Annotation>
+        </Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
